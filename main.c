@@ -370,10 +370,10 @@ void greenToRed (int th1, int th2, int th3, int th4) {                       //i
 		ADC1_SC1A = 0x1F; //disables module
 
 
-	    SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK; // Port D clock enable
-	    PORTD_GPCLR = 0x00FF0100; //Configuring GPIO for Port B
-	    GPIOD_PDDR |= 0x000000FF;
-	    GPIOD_PDOR = 0x0000FFFF; //Sets Port D as outputs
+	    	SIM_SCGC5 |= SIM_SCGC5_PORTD_MASK; // Port D clock enable
+	    	PORTD_GPCLR = 0x00FF0100; //Configuring GPIO for Port B
+	    	GPIOD_PDDR |= 0x000000FF;
+	    	GPIOD_PDOR = 0x0000FFFF; //Sets Port D as outputs
 
 		SIM_SCGC5 |= SIM_SCGC5_PORTC_MASK;
 		PORTC_GPCLR = 0x01BF0100;
@@ -397,11 +397,9 @@ void greenToRed (int th1, int th2, int th3, int th4) {                       //i
 		int phototh4 = ADC1_read16b(0x01) - 0x80;
 		while (1) {
 
-			//greenToRed(phototh1, phototh2, phototh3, phototh4);
+			greenToRed(phototh1, phototh2, phototh3, phototh4);
 
-			  int pulse_ticks = 1315 + ((angle * (2625 - 1315)) / 180);
-			  FTM3_C6V = pulse_ticks;
-			  //FTM3_C6SC = 0x28; // Make sure PWM active high is set again
+
 
 
 
