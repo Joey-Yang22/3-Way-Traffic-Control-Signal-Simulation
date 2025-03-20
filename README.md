@@ -24,8 +24,8 @@ https://www.youtube.com/watch?v=5-wGfDezM0A
 
 ## 👨‍💻 Contributors
 
-- Jonathon Gomez
-- Joey Yang
+- Jonathon Gomez https://github.com/jonagom10
+- Joey Yang https://github.com/Joey-Yang22
 
 ## 🛠 Tools & Technologies
 
